@@ -15,8 +15,13 @@
   .qr-card img { width: 132px; height: 132px; flex-shrink: 0; border: 1px solid var(--border); border-radius: var(--r-md); }
   .qr-card h3 { font-family: var(--font-display); font-weight: 700; font-size: 19px; color: var(--ink); margin: 7px 0 6px; }
   .qr-card p { font-size: 14px; color: var(--ink-2); line-height: 1.65; }
-  .qr-card .qr-url { display: inline-block; margin-top: 9px; font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: var(--primary-ink); background: var(--primary-soft); border-radius: var(--r-pill); padding: 4px 13px; }
-  @media (max-width: 560px) { .qr-card { flex-direction: column; text-align: center; } }
+  .qr-card .qr-url { display: inline-block; margin-top: 9px; font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: var(--primary-ink); background: var(--primary-soft); border-radius: var(--r-pill); padding: 4px 13px; word-break: break-all; }
+  @media (max-width: 560px) {
+    .qr-card { flex-direction: column; text-align: center; gap: 14px; padding: 18px 16px; }
+    .qr-card img { width: 168px; height: 168px; }
+    .qr-card h3 { font-size: 18px; }
+    .qr-card p { font-size: 13.5px; }
+  }
 </style>
 </head>
 <body>
