@@ -11,6 +11,12 @@
   .class-brand img { width: 34px; height: 34px; }
   .class-brand span { font-family: var(--font-display); font-weight: 800; font-size: 16px; color: var(--ink); }
   .class-foot { margin-top: 40px; padding: 22px 0 40px; border-top: 1px solid var(--border); font-size: 12px; line-height: 1.7; color: var(--ink-3); text-align: center; }
+  .qr-card { display: flex; align-items: center; gap: 22px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-xl); padding: 20px 24px; margin: 14px 0 4px; box-shadow: var(--shadow-sm); }
+  .qr-card img { width: 132px; height: 132px; flex-shrink: 0; border: 1px solid var(--border); border-radius: var(--r-md); }
+  .qr-card h3 { font-family: var(--font-display); font-weight: 700; font-size: 19px; color: var(--ink); margin: 7px 0 6px; }
+  .qr-card p { font-size: 14px; color: var(--ink-2); line-height: 1.65; }
+  .qr-card .qr-url { display: inline-block; margin-top: 9px; font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: var(--primary-ink); background: var(--primary-soft); border-radius: var(--r-pill); padding: 4px 13px; }
+  @media (max-width: 560px) { .qr-card { flex-direction: column; text-align: center; } }
 </style>
 </head>
 <body>
@@ -20,6 +26,16 @@
   <div class="class-brand">
     <img src="assets/logo-mark.svg" alt="">
     <span>無線電學習站 · 基礎班講義</span>
+  </div>
+
+  <div class="qr-card">
+    <img src="assets/img/radio-101-qrcode.png" alt="本講義 QR Code">
+    <div>
+      <div class="eyebrow">掃碼把講義帶著走</div>
+      <h3>用手機掃這個 QR</h3>
+      <p>掃描就能把這份「基礎無線電使用」講義帶到你的手機，上課跟著看、課後隨時複習。</p>
+      <span class="qr-url">winson3qq.github.io/radio-101</span>
+    </div>
   </div>
 
   <div class="read-hero">
